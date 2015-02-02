@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2014 Chris Banes
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.philm.in">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".PhilmApplication"
+        android:theme="@style/Theme.Philm">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MovieActivity"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".PersonActivity"
+            android:parentActivityName=".MainActivity">
+
+            <intent-filter>
+                <action android:name="philm.intent.action.VIEW_PERSON"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".AccountActivity"
+            android:theme="@style/Theme.Philm.Framed"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Philm.Framed"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:theme="@style/Theme.Philm.Framed"
+            android:label="@string/settings_title"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".MovieImagesActivity"
+            android:theme="@style/Theme.Philm.Images"
+            android:exported="false"
+            android:parentActivityName=".MovieActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MovieActivity" />
+
+        </activity>
+
+        <service android:name=".account.PhilmAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator"/>
+        </service>
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="0c0bf3d0b7b5aeff1ce7c8ca71710cc3b836ff47"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2014 Chris Banes
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <string name="app_name">Philm</string>
+    <string name="title_film_detail">Film Detail</string>
+
+    <string name="discover_title">Discover</string>
+    <string name="popular_title">Popular</string>
+    <string name="trending_title">Trending</string>
+    <string name="library_title">Library</string>
+    <string name="watchlist_title">Watchlist</string>
+    <string name="search_title">Search</string>
+    <string name="about_title">About</string>
+    <string name="in_theatres_title">In theatres</string>
+    <string name="upcoming_title">Upcoming</string>
+    <string name="recommended_title">Recommended</string>
+
+    <string name="details">Details</string>
+
+    <string name="movie_details_released">Released</string>
+    <string name="movie_details_runtime">Runtime</string>
+    <string name="movie_details_runtime_content">%1$d mins</string>
+    <string name="movie_details_certification">Certification</string>
+    <string name="movie_details_genres">Genres</string>
+    <string name="movie_details_budget">Budget</string>
+    <string name="movie_details_budget_content">$%,d</string>
+    <string name="movie_details_language">Language</string>
+
+    <string name="related_movies">Related</string>
+    <string name="cast_movies">Cast</string>
+    <string name="crew_movies">Crew</string>
+    <string name="images_movies">Images</string>
+    <string name="trailers_movies">Trailers</string>
+
+    <string name="button_add_account">Add Account</string>
+
+    <string name="login_prompt">Login to trakt.tv</string>
+
+    <string name="drawer_open_content_desc">Drawer open</string>
+    <string name="drawer_closed_content_desc">Drawer closed</string>
+
+    <string name="account_username_hint">Username</string>
+    <string name="account_password_hint">Password</string>
+    <string name="account_email_hint">Email address</string>
+    <string name="account_login">Login</string>
+    <string name="account_register">Register</string>
+
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_about">About</string>
+
+    <string name="menu_filter">Filter</string>
+    <string name="menu_filter_clear">Clear</string>
+
+    <string name="empty_missing_account">%1$s could not be retrieved as you are not logged in.</string>
+    <string name="empty_network_error">%1$s could not be retrieved due to an network error. Check your internet connection and try again.</string>
+    <string name="empty_unknown_error">%1$s could not be retrieved due to an unknown error.</string>
+
+    <string name="login_username_empty">Username is empty.</string>
+    <string name="login_password_empty">Password is empty.</string>
+    <string name="login_email_invalid">Email address is not valid.</string>
+
+    <string name="login_authorization_error">The username or password were incorrect. Please try again.</string>
+    <string name="create_user_authorization_error">The username or email are currently been used on Trakt. Please try again.</string>
+
+    <string name="error_unauthorized">Unauthorized</string>
+    <string name="error_network">Network error</string>
+    <string name="error_movie_not_found_trakt">Movie not found at trakt</string>
+    <string name="error_movie_not_found_tmdb">Movie not found at TMDb</string>
+    <string name="error_unknown">Unknown error :(</string>
+
+    <string name="movie_title_year">%1$s (%2$d)</string>
+    <string name="movie_rating_votes">%1$d%% - %2$d votes</string>
+    <string name="movie_release_date">Release date: %1$s</string>
+
+    <string name="filter_collection">In collection</string>
+    <string name="filter_seen">Seen</string>
+    <string name="filter_unseen">Unseen</string>
+    <string name="filter_upcoming">Upcoming</string>
+    <string name="filter_soon">Soon</string>
+    <string name="filter_released">Released</string>
+    <string name="filter_highly_rated">Highly Rated</string>
+
+    <string name="action_add_watchlist">Add to watchlist</string>
+    <string name="action_remove_watchlist">Remove from watchlist</string>
+    <string name="action_add_collection">Add to collection</string>
+    <string name="action_remove_collection">Remove from collection</string>
+    <string name="action_mark_seen">Mark as seen</string>
+    <string name="action_mark_unseen">Mark as unseen</string>
+
+    <string name="search_hint">Search</string>
+
+    <string name="category_movies">Movies</string>
+    <string name="category_people">People</string>
+
+    <string name="search_empty">Search by entering text above</string>
+    <string name="search_empty_no_results">No results found</string>
+
+    <string name="movie_detail_votes">Votes</string>
+    <string name="movie_detail_global">Global</string>
+    <string name="movie_detail_rate">Rate</string>
+
+    <string name="person_born_date">Born: %1$s</string>
+    <string name="person_born_date_with_loc">Born: %1$s at %2$s</string>
+    <string name="person_age">Age: %1$s</string>
+    <string name="person_death_date">Died: %1$s, aged %2$s</string>
+
+    <string-array name="movie_rating_descriptions">
+        <item>Unrated</item>
+        <item>Weak sauce</item>
+        <item>Terrible</item>
+        <item>Bad</item>
+        <item>Poor</item>
+        <item>Meh</item>
+        <item>Fair</item>
+        <item>Good</item>
+        <item>Great</item>
+        <item>Superb</item>
+        <item>Totally Ninja</item>
+    </string-array>
+
+    <string name="movie_checkin">Checkin</string>
+    <string name="movie_checkin_header">Currently Watching</string>
+    <string name="movie_checkin_message_hint">Message</string>
+    <string name="movie_checkin_cancel">Cancel checkin</string>
+    <string name="movie_checkin_cancel_message">Are you sure you want to cancel your checkin to \"%1$s\"?</string>
+
+    <string name="about_build_version_title">Build Version</string>
+    <string name="about_build_time_title">Build Time</string>
+    <string name="about_open_source_title">Open-source licences</string>
+    <string name="about_open_source_content">Licence details for used open-source software</string>
+    <string name="about_powered_tmdb_title">Powered by TMDb</string>
+    <string name="about_powered_tmdb_content">This product uses the TMDb API but is not endorsed or certified by TMDb.</string>
+    <string name="about_powered_trakt_title">Powered by trakt.tv</string>
+    <string name="about_powered_trakt_content">This product uses the trakt.tv API but is not endorsed or certified by trakt.tv.</string>
+
+    <string name="movie_rate_mark_watched">Mark Watched</string>
+
+    <string name="pref_remove_watchlist_on_watched_title">Remove from watchlist</string>
+    <string name="pref_remove_watchlist_on_watched_summary">Remove from watchlist when watched</string>
+    <string name="settings_title">Settings</string>
+    <string name="see_more">See more</string>
+    <string name="checkin_facebook">Facebook</string>
+    <string name="checkin_twitter">Twitter</string>
+    <string name="checkin_path">Path</string>
+    <string name="checkin_tumblr">Tumblr</string>
+    <string name="movie_checkin_social_help">Your settings on trakt.tv determine what is posted to your selected social networks</string>
+
+    <string name="trakt_wrong_credentials_title">Password changed</string>
+    <string name="trakt_wrong_credentials_text">Your Trakt.tv password seems to have changed so you have been logged out. Please login again using your new password.</string>
+
+    <string name="trakt_login_prompt">Philm is much more fun when you\'re logged into trakt.tv. Click here to login or register.</string>
+
+</resources>

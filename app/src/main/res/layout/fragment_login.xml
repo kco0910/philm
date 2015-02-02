@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2014 Chris Banes
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:philm="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="0px"
+          android:layout_weight="1">
+
+        <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:padding="@dimen/spacing_major"
+              android:animateLayoutChanges="true">
+
+            <app.philm.in.view.FontTextView
+                  android:id="@+id/textview_login_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/login_prompt"
+                  android:padding="@dimen/spacing_major"
+                  style="@style/Widget.Philm.Movie.Login.Title" />
+
+            <app.philm.in.view.FloatLabelLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/spacing_minor"
+                  philm:floatLabelTextAppearance="@style/TextAppearance.Philm.FloatLabel">
+
+                <EditText
+                      android:id="@+id/edit_login"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/account_username_hint"
+                      android:maxLines="1"
+                      android:singleLine="true"
+                      android:inputType="textNoSuggestions"
+                      android:imeOptions="actionNext"
+                      android:nextFocusDown="@+id/edit_password" />
+
+            </app.philm.in.view.FloatLabelLayout>
+
+            <app.philm.in.view.FloatLabelLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/spacing_minor"
+                  philm:floatLabelTextAppearance="@style/TextAppearance.Philm.FloatLabel">
+
+                <EditText
+                      android:id="@+id/edit_password"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/account_password_hint"
+                      android:inputType="textPassword"
+                      android:singleLine="true"
+                      android:imeOptions="actionDone" />
+
+            </app.philm.in.view.FloatLabelLayout>
+
+            <app.philm.in.view.FloatLabelLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="@dimen/spacing_minor"
+                  philm:floatLabelTextAppearance="@style/TextAppearance.Philm.FloatLabel">
+
+                <AutoCompleteTextView
+                      android:id="@+id/actv_email"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="@string/account_email_hint"
+                      android:inputType="textEmailAddress"
+                      android:selectAllOnFocus="true" />
+
+            </app.philm.in.view.FloatLabelLayout>
+
+            <RadioGroup
+                  android:id="@+id/rg_type"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="@dimen/spacing_major">
+
+                <RadioButton
+                      android:id="@+id/rb_login"
+                      android:text="@string/account_login"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+                <RadioButton
+                      android:id="@+id/rb_create"
+                      android:text="@string/account_register"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="?android:attr/dividerVertical" />
+
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          style="?android:buttonBarStyle">
+
+        <Button
+              android:id="@+id/btn_submit"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/account_login"
+              style="?android:buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

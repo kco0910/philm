@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2014 Chris Banes
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <dimen name="drawer_side_menu_width">400dp</dimen>
+    <dimen name="drawer_user_text_size">16dp</dimen>
+    <dimen name="drawer_movie_checkin_poster_width">68dp</dimen>
+    <!-- Should be movie_detail_poster_width * 1.6 -->
+    <dimen name="drawer_movie_checkin_poster_height">110dp</dimen>
+    <dimen name="drawer_account_avatar_width">60dp</dimen>
+    <dimen name="drawer_account_avatar_height">60dp</dimen>
+
+    <dimen name="movie_grid_item_width">140dp</dimen>
+    <dimen name="movie_grid_item_height">224dp</dimen>
+
+    <dimen name="detail_card_height">175dp</dimen>
+    <dimen name="detail_card_item_width">110dp</dimen>
+
+    <dimen name="movie_detail_poster_width">100dp</dimen>
+    <!-- Should be movie_detail_poster_width * 1.6 -->
+    <dimen name="movie_detail_poster_height">160dp</dimen>
+
+    <dimen name="movie_detail_fanart_height">276dp</dimen>
+
+    <dimen name="movie_detail_title_textsize">32dp</dimen>
+    <dimen name="movie_detail_tagline_textsize">18dp</dimen>
+    <dimen name="movie_detail_summary_textsize">18dp</dimen>
+
+    <dimen name="movie_list_image_width">80dp</dimen>
+    <dimen name="movie_list_item_height">120dp</dimen>
+
+</resources>
